@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Recibo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <main>
+            <h1 class="back">DIEGO <span class="format">PONTES</span></h1>
+          <div class="dados">
+            <h1>Gerador De Recibos</h1> <br>
+            Nome do Emitente: <br />
+            <input type="text" id="emitente" required placeholder="EX: Digite Seu Nome " /> <br /><br />
+
+            Recebemos de: <br />
+            <input type="text" id="nome" required placeholder="EX: Nome do Recebido " /> <br /><br />
+
+            valor R$: <br />
+            <input type="number" id="valor" required placeholder="EX: 100,00 " /> <br /><br />
+            <button onclick="gerarRecibo()">Gerar Recibo</button>
+            <button onclick="apagarRecibo()">Apagar Recibo</button>
+          </div>   
+        </main>
+
+        <div class="print">
+           <h1>Recibo - <span id="recibo_emitente"></span></h1>
+
+           <p>Recebemos de: <span id="recibo_nome"></span></p>
+
+            Valor: R$ <h2 id="recibo_valor">0,00</h2>
+
+            <p>Data: <span id="recibo_data"></span></p>
+            <br /><br />
+             
+            <div class="assinatura"></div>
+
+        </div> 
+
+        <footer style="text-align: center;"> <h1>TODOS OS DIREITOS RESERVADOS &COPY; 2023</h1></footer>
+
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
